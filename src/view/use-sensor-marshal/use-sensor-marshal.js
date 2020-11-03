@@ -357,11 +357,7 @@ type SensorMarshalArgs = {|
   enableDefaultSensors: boolean,
 |};
 
-const defaultSensors: Sensor[] = [
-  useMouseSensor,
-  useKeyboardSensor,
-  useTouchSensor,
-];
+const defaultSensors: Sensor[] = [useMouseSensor, useTouchSensor];
 
 export default function useSensorMarshal({
   contextId,
